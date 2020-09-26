@@ -13,7 +13,7 @@ module.exports = {
                 '-hls_wrap 2',
                 '-g 30',
                 '-hls_time 1',
-            ]).output('./source-m3u8/output.m3u8').on('progress', function(stderr) {
+            ]).output('./hls/nctu.m3u8').on('progress', function(stderr) {
     console.log(stderr);
   }).run()
         });
