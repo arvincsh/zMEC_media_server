@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
 
 const hls = new HLSServer(server, {
   path: '/streams', // Base URI to output HLS streams
-  dir: 'source-m3u8', // Directory that input files are stored
+  dir: 'hls', // Directory that input files are stored
 });
 
 server.listen(4000);
