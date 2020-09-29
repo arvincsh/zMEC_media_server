@@ -10,9 +10,9 @@ module.exports = {
                 '-start_number 0',     // start the first .ts segment at index 0
                 '-hls_list_size 1',    // Maxmimum number of playlist entries)
                 '-f hls',               // HLS format
-                '-hls_wrap 2',
+                '-hls_wrap 3',
                 '-g 30',
-                '-hls_time 1',
+                '-hls_time 2',
             ]).output('./hls/nctu.m3u8').on('progress', function(stderr) {
     console.log(stderr);
   }).run()
