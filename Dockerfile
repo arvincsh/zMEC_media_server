@@ -16,6 +16,4 @@ WORKDIR /home/work/zMEC_media_server
 
 RUN sudo npm install 
 
-RUN sudo npm install forever -g 
-
-CMD [ "forever", "hlsserver.js" ]
+CMD [ "node", "hlsserver.js" ]
