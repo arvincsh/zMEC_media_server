@@ -11,7 +11,7 @@ module.exports = {
                 '-hls_list_size 10',    // Maxmimum number of playlist entries)
                 '-f hls',               // HLS format
                 '-hls_wrap 10',
-                '-g 30',
+                '-g 24',
                 '-hls_time 0.1',
             ]).output('./hls/nctu.m3u8').on('progress', function(stderr) {
     console.log(stderr);
