@@ -8,11 +8,11 @@ module.exports = {
 //                '-level 1.0',
                 //'-s 640x360',          // 640px width, 360px height
                 '-start_number 0',     // start the first .ts segment at index 0
-                '-hls_list_size 10',    // Maxmimum number of playlist entries)
+                '-hls_list_size 120',    // Maxmimum number of playlist entries)
                 '-f hls',               // HLS format
-                '-hls_wrap 10',
-                '-g 24',
-                '-hls_time 0.1',
+                '-hls_wrap 240',
+                '-g 15',
+                '-hls_time 0.5',
             ]).output('./hls/nctu.m3u8').on('progress', function(stderr) {
     console.log(stderr);
   }).run()
